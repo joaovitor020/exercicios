@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 5px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #cnome{
+            background-color: blue;
+        }
+        #cgroup{
+            background-color: yellow;
+        }
+        #cprof{
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col id="cnome">
+            <col id="cgroup" span="2">
+            <col id="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Mulher</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>Homem</td>
+            <td>22</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Beatriz</td>
+            <td>Mulher</td>
+            <td>28</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>Homem</td>
+            <td>35</td>
+            <td>Arquiteto</td>
+        </tr>
+        <tr>
+            <td>Camila</td>
+            <td>Mulher</td>
+            <td>41</td>
+            <td>Psicóloga</td>
+        </tr>
+        <tr>
+            <td>Rodrigo</td>
+            <td>Homem</td>
+            <td>54</td>
+            <td>Médico</td>
+        </tr>
+    </table>
+</body>
+</html>
